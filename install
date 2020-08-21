@@ -1,1 +1,14 @@
+Execute CMD As Afmin
+git clone https://github.com/openai/gpt-2.git
+cd gpt-2
+
+INSTALL
+pip install tensorflow==1.15.0
+pip install -r requirements.txt
+python download_model.py 124M 
+
+FINE TUNING
+git clone https://github.com/nshepperd/gpt-2.git
+cd gpt-2
+python download_model.py 124M
 
